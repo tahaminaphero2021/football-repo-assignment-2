@@ -1,0 +1,107 @@
+/********* fonts **********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ---------common styles or utilities------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#FFFFFF;
+}
+header{
+    background-color: #2D25A0;
+    width:100%;
+    height: 300px;
+    margin:20px ;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background: #FFFFFF;
+    width: 500px;
+    display: flex;
+   box-shadow: 10px 10px 40px grey;
+    margin-left: 15px;
+    background-color: whitesmoke;
+}
+h2{
+    font-size:22px;
+    color:white;
+    margin-left:10px;
+    margin-top:20px;
+    padding:10px;
+}
+.section-title img{
+    height:200px;
+    border:1px solid green;
+    margin-left:800px;
+   
+}
+button{
+
+    background: #E02C6D;
+    color: white;
+    padding: 10px; 
+ margin-left:20px;
+}
+
+/*-------------------
+     top players style 
+-------------------*/
+ .top-players{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:27px;
+    margin: 30px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 px;
+}   
+.player img{
+    width:70px;
+    height: 70px;
+     flex-wrap: wrap;
+     padding:15px;
+}
+
+.player-name{
+   
+    font-size:10px;
+}
+.player p{
+    font-size:10px;
+    align-items: center;
+    text-align:justify;
+    
+
+
+}
+hr{
+
+}
+/*----------footer style------- */
+footer{
+    background-color: #FFFFFF;
+    display:flex;
+    position:relative;
+ align-items:center;
+    justify-content: center;
+    
+    }
+footer img{
+    width:200px;
+   
+}
+ footer i{
+    justify-content: center;
+    margin:20px ;
+   
+} 
+footer p{
+    justify-content: center;
+        color: #000000;
+        text-align:center;
+
+}
