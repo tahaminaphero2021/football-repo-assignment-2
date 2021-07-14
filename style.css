@@ -35,9 +35,16 @@ h2{
 }
 .section-title img{
     height:200px;
-    border:1px solid green;
     margin-left:800px;
+    transition: transform 1s ease-out 0.3s;
    
+}
+.field:hover .ball{
+    transform: translate(750px, -100px);
+}
+.field:hover .image{
+    transform: rotate(-60deg);
+    transform-origin: top right;
 }
 button{
 
@@ -81,6 +88,21 @@ button{
 hr{
 
 }
+/* -----------------
+        My blog
+-------------------- */
+.my-blog{
+    background-color:#FFFFFF;
+align-items:center;
+display:flex;
+border-radius:10px;
+}
+.blogs {
+padding-left:20px;
+margin:20px 20px;
+
+
+}
 /*----------footer style------- */
 footer{
     background-color: #FFFFFF;
@@ -88,20 +110,45 @@ footer{
     position:relative;
  align-items:center;
     justify-content: center;
+    margin:20px 20px;
     
     }
-footer img{
+.logo img{
     width:200px;
    
 }
- footer i{
+.Social-icon{
     justify-content: center;
-    margin:20px ;
+    margin-left:100px;
+    padding-left:20px;
    
 } 
-footer p{
-    justify-content: center;
+.footer-bottom{
+    margin-left:100px;
         color: #000000;
         text-align:center;
 
+}
+/* ----------------------
+        Media Queries 
+-------------------------*/
+
+/*----------------
+    Mobile Devices
+--------------- */
+
+@media only screen and (max-width:680px){
+    .header{
+        width:100%;
+    }
+    .players, .container{
+        grid-template-columns:repeat(1,1fr);
+    }
+    
+    .palyer, .blogs{
+        flex-direction:column;
+    }
+    .blogs, .footer{
+        display:none;
+    }
 }
